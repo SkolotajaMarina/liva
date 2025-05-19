@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sda.lv</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            background-color: white;
+        }
+        
+        header {
+            background-color: cadetblue;
+            padding: 30px;
+            text-align: left;
+            font-size: 25px;
+            color: white;
+            position: relative;
+        }
+        
+        header img {
+            position: absolute;
+            top: 11px;
+            right: 12px;
+            height: 140px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .image {
+            width: 150px;
+            height: 150px;
+            margin-right: 30px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .text {
+            max-width: calc(100% - 180px);
+        }
+
+        .text h1 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .text p {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        .apaksa {
+            background-color: #6b9298;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 40px;
+            font-family: Arial, sans-serif;
+            letter-spacing: 20px;
+            font-weight: 300;
+            margin-top: 40px;
+        }
+
+        /* Poga atpakaļ uz sākumlapu */
+        .back-button {
+            display: inline-block;
+            background-color: #6b9298;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 20px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #558285;
+        }
+
+        /* Responsīvais dizains */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .image {
+                margin-right: 0;
+                margin-bottom: 15px;
+                width: 100%;
+                height: auto;
+            }
+            .text {
+                max-width: 100%;
+            }
+            .text h1 {
+                font-size: 24px;
+            }
+            .text p {
+                font-size: 16px;
+            }
+            .back-button {
+                font-size: 16px;
+                padding: 10px 20px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Vērtības</h2>
+        <h1>
+            <img src="logoo.jpeg" alt="Logo" />
+        </h1>
+    </header>
+
+    <div class="container">
+        <img src="maska.jpeg" alt="Apraksts" class="image" />
+        <div class="text">
+            <h1>Ilgtspējība</h1>
+            <p>Es izmantoju pārstrādātus materiālus un videi draudzīgas ražošanas metodes, lai mazinātu ietekmi uz dabu.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="maaska.jpeg" alt="Apraksts" class="image" />
+        <div class="text">
+            <h1>Kvalitāte</h1>
+            <p>Apģērbs ir radīts ilgstošai lietošanai, apvienojot izturību ar estētiku.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="jamaska.jpeg" alt="Apraksts" class="image" />
+        <div class="text">
+            <h1>Cieņa pret dabu un cilvēkiem</h1>
+            <p>Es radīšu apģērbu, kas tuvina cilvēka un planētas attiecības, veicinot apzinātu patēriņu un dzīvesveidu.</p>
+        </div>
+    </div>
+
+    <a href="mode.html" class="back-button">Atpakaļ uz sākumlapu</a>
+
+    <div class="apaksa">
+        KAS ES ESMU?
+    </div>
+
+</body>
+</html>
